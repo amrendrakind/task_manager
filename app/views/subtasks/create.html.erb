@@ -1,0 +1,11 @@
+<h1>Subtasks#create</h1>
+<p>Find me in app/views/subtasks/create.html.erb</p>
+<h1>New Sub Task</h1>
+
+<%= form_with(model: @subtask, url: task_subtasks_path) do |form| %>
+  <%= form.label :task_name %>
+  <%= form.text_field :subtask_name %>
+  <%= form.submit %>
+<% end %>
+
+<p><%= link_to "Cancel", tasks_path %></p>
